@@ -231,17 +231,52 @@ ng build --base-href /frontend/ --deploy-url /frontend/ --prod
 
 ```
 alias git-add-commit='git add . && git commit -m'
+
 alias git-master-delete='git checkout master && git branch -d'
+
 alias bash='nano /home/user/.bashrc'
+
 alias bash-source='source /home/user/.bashrc'
+
 alias git-andre='git config --global user.name andretecnologia && git config --global user.email '
+
 alias mudar-para-dev-b='git config --global user.name "" && git config --global user.email '
+
 alias mudar-para-dev-a='git config --global user.name ""  && git config --global user.email '
-alias git-enegocios='git config --global user.name && git config --global user.email enegocios.andre@gmail.com'
+
+alias git-enegocios='git config --global user.name && git config --global user.email '
+
 alias git-list='git config --list'
+
 alias git-log='git log --oneline'
+
 alias ssh-email='ssh-keygen -t rsa -b 4096 -C'
+
 alias ssh-eval='eval "$(ssh-agent -s)"'
+
 alias ssh-adiciona='ssh-add ~/.ssh/id_rsa'
+
 alias ssh-copy='xclip -sel clip < ~/.ssh/id_rsa.pub'
+
+export PATH="$PATH:/snap/bin/code"
+
+export PATH="$PATH:/snap/intellij-idea-community/current/bin"
+
+#grep -i chave_de_pesquisa arquivo
+#grep -l solicitação ./*
+
+#installdeb dpkg -i package management system -install
+
+alias install-deb='sudo dpkg -i'
+
+alias preparesonar='sudo rm -Rf /opt/sonarqube && cd /opt && sudo unzip /opt/sonarqube.zip && sudo /opt/sonarqube/bin/linux-x86-64/sonar.sh console' 
+
+alias consolesonar='/opt/sonarqube/bin/linux-x86-64/sonar.sh console'
+
+alias runsonar='mvn clean install sonar:sonar -Dsonar.host.url=http://localhost:9000'
+
+alias robot3t='cd /opt/robo3t-1.3.1-linux-x86_64-7419c406/bin && ./robo3t' 
+
+alias gitaddall='git add . && git reset src/main//resources/application-local.yml'
+
 ```
