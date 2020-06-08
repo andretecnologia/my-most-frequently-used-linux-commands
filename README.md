@@ -226,6 +226,7 @@ netstat -tlpn| grep nginx
 ```
 ng build --base-href /frontend/ --deploy-url /frontend/ --prod
 
+```
 
 # Aliases
 
