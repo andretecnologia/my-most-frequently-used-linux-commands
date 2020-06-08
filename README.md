@@ -225,4 +225,23 @@ netstat -tlpn| grep nginx
 
 ```
 ng build --base-href /frontend/ --deploy-url /frontend/ --prod
+
+
+# Aliases
+
+```
+alias git-add-commit='git add . && git commit -m'
+alias git-master-delete='git checkout master && git branch -d'
+alias bash='nano /home/user/.bashrc'
+alias bash-source='source /home/user/.bashrc'
+alias git-andre='git config --global user.name andretecnologia && git config --global user.email '
+alias mudar-para-dev-b='git config --global user.name "" && git config --global user.email '
+alias mudar-para-dev-a='git config --global user.name ""  && git config --global user.email '
+alias git-enegocios='git config --global user.name && git config --global user.email enegocios.andre@gmail.com'
+alias git-list='git config --list'
+alias git-log='git log --oneline'
+alias ssh-email='ssh-keygen -t rsa -b 4096 -C'
+alias ssh-eval='eval "$(ssh-agent -s)"'
+alias ssh-adiciona='ssh-add ~/.ssh/id_rsa'
+alias ssh-copy='xclip -sel clip < ~/.ssh/id_rsa.pub'
 ```
