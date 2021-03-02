@@ -1,5 +1,7 @@
 # My most frequently used linux commands
-
+```
+sudo ps -ef | grep java
+```
 
 ```
 sudo find / -size +1G
