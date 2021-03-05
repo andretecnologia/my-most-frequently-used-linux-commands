@@ -230,6 +230,12 @@ ng build --base-href /frontend/ --deploy-url /frontend/ --prod
 
 ```
 
+# Maven | Oracle | Springboot
+
+```
+mvn install:install-file -Dfile=path/to/your/ojdbc7.jar -DgroupId=com.oracle -DartifactId=ojdbc7 -Dversion=12.2.0.1 -Dpackaging=jar
+```
+
 # Aliases
 
 ```
