@@ -1,6 +1,6 @@
 # My most frequently used linux commands
 ```
-sudo ps -ef | grep java
+ps -ef | grep java
 ```
 
 ```
@@ -289,3 +289,53 @@ alias robot3t='cd /opt/robo3t-1.3.1-linux-x86_64-7419c406/bin && ./robo3t'
 alias gitaddall='git add . && git reset src/main//resources/application-local.yml'
 
 ```
+
+New commands
+
+```
+
+sudo apt-get remove --purge openssh-server
+sudo apt-get install openssh-server
+
+sudo service ssh restart   
+sudo service ssh status 
+
+systemctl status btomcat
+systemctl start btomcat
+
+nano nginx.conf
+sudo systemctl status nginx
+nginx -t -c /etc/nginx/nginx.conf
+sudo nginx -t -c /etc/nginx/nginx.conf
+sudo service nginx restart
+sudo service nginx status
+systemctl enable nginx
+sudo systemctl enable nginx
+sudo service nginx status
+ps auxf | grep nginx
+ufw status
+sudo ufw status
+nginx -t
+sudo nginx -t
+
+sudo chmod 777 -Rf /opt/apache-tomcat-9.0.21/webapps/
+su -root
+su - root
+usermod -a -G grmaster tomcat
+sudo usermod -a -G grmaster tomcat
+sudo chmod 777 -Rf /opt/apache-tomcat-9.0.21/webapps/
+sudo systemctl status tomcat
+sudo systemctl status btomcat
+sudo systemctl stop btomcat
+sudo systemctl start btomcat
+sudo systemctl status btomcat
+ps -ef | grep java
+lsof -i :8080 | grep LISTEN
+lsof -i :808
+lsof -i :8080
+sudo lsof -i :8080
+sudo systemctl stop btomcat
+sudo systemctl start btomcat
+
+```
+
